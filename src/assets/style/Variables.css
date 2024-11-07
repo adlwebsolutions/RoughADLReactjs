@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+
+    /* ======================== Color ============================ */
+    /* Primary Colors */
+    --color-primary: #3498db;
+    --color-primary-dark: #2980b9;
+    --color-primary-light: #5dade2;
+  
+    /* Secondary Colors */
+    --color-secondary: #2ecc71;
+    --color-secondary-dark: #27ae60;
+    --color-secondary-light: #58d68d;
+  
+    /* Accent Colors */
+    --color-accent: #f39c12;
+    --color-accent-dark: #e67e22;
+    --color-accent-light: #f7c6a7;
+  
+    /* Background Colors */
+    --color-background: #ffffff;
+    --color-grey-background: #f1f1f1;
+    --color-background-alt: #f7f9fa;
+    --color-surface: #ecf0f1;
+    --color-button-background: #f5f5f5;
+  
+    /* Text Colors */
+    --color-text-primary: #333333;
+    --color-text-secondary: #555555;
+    --color-text-muted: #7f8c8d;
+  
+    /* Border and Divider Colors */
+    --color-border: #dcdcdc;
+    --color-divider: #e0e0e0;
+  
+    /* Status Colors */
+    --color-success: #27ae60;
+    --color-warning: #f39c12;
+    --color-error: #e74c3c;
+    --color-info: #3498db;
+
+    /* ===========================  Font ======================================= */
+
+     /* Font Families */
+    --font-family-primary: 'Poppins', sans-serif;
+    --font-family-secondary: 'Open Sans', sans-serif;
+    --font-family-monospace: 'Courier New', monospace;
+
+    /* Font Sizes */
+    --font-size-xs: 0.75rem; /* 12px */
+    --font-size-sm: 0.875rem; /* 14px */
+    --font-size-base: 1rem; /* 16px */
+    --font-size-lg: 1.25rem; /* 20px */
+    --font-size-xl: 1.5rem; /* 24px */
+    --font-size-xxl: 2rem; /* 32px */
+    --font-heading: 3rem;
+    --font-subheading: 2.2rem;
+    --font-title: 1.8rem;
+    --font-subtitle: 14px;
+
+    /* Font Weights */
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* Line Heights */
+    --line-height-base: 1.5;
+    --line-height-heading: 1.2;
+    --line-height-subheading: 1.4;
+
+    /* ===========================  spacing ====================================== */
+
+    /* Spacing Scale (for Padding and Margin) */
+    --space-xxs: 0.25rem; /* 4px */
+    --space-xs: 0.5rem; /* 8px */
+    --space-sm: 0.75rem; /* 12px */
+    --space-md: 1rem; /* 16px */
+    --space-lg: 1.5rem; /* 24px */
+    --space-xl: 2rem; /* 32px */
+    --space-xxl: 3rem; /* 48px */
+
+
+    /* Container Padding */
+    --container-padding: 1rem;
+    --section-padding: 2rem;
+
+    /* =========================== Container ================================== */
+
+    /* Component Widths */
+    --max-width-container: 1200px;
+    --max-width-content: 800px;
+    --max-width-sidebar: 300px;
+
+    /* Border Radius */
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
+
+    /* Button Sizes */
+    --button-height-sm: 2rem; /* 32px */
+    --button-height-md: 2.5rem; /* 40px */
+    --button-height-lg: 3rem; /* 48px */
+
+    /* Icon Sizes */
+    --icon-size-sm: 1rem; /* 16px */
+    --icon-size-md: 1.5rem; /* 24px */
+    --icon-size-lg: 2rem; /* 32px */
+
+    
+    /* ========================  Animation ===================================== */
+
+    /* Transition Durations */
+    --transition-fast: 0.2s;
+    --transition-medium: 0.4s;
+    --transition-slow: 0.6s;
+
+    /* Animation Timing */
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+
+
+    
+}
+
+
+/* ========================================================================= */
+
+/* utility button */
+.btn {
+    display: inline-block;
+    padding: 13px 20px;
+    color: var(--color-text-primary);
+    background-color: var(--color-grey-background);
+    border-radius: var(--border-radius-md);
+    transition: var(--transition-slow);   
+    font-weight: var(--font-weight-semibold);
+}
+
+
+.btn:hover{
+    background-color: var(--color-text-primary);
+    color: var(--color-background)!important;
+}
+
+/* blue color button */
+.btnPrimary{
+    background: var(--color-primary-dark);
+    color: var(--color-background);
+}
+
+/* orange color button */
+.btnAccent{
+    background: var(--color-accent);
+    color: var(--color-background);
+}
+
+
+.btnBlock{
+    display: block;
+    width: 100%;
+}
+
+
+/* ===================================================================== */
+/* utility container */
+
+.container{
+    max-width: var(--max-width-container);
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.boxContainer{
+    max-width: var(--max-width-container);
+    padding: 50px;
+    margin: 0 auto;
+
+}
+
+.containerSM{
+    max-width: var(--max-width-content);
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* heading classes */
+
+.text-xxl{
+    font-size: var(--font-heading);
+    line-height: var(--line-height-base);
+    font-weight: var(--font-weight-semibold);
+}
+
+.text-xl{
+    font-size: var(--font-subheading);
+    line-height: var(--line-height-subheading);
+    font-weight: var(--font-weight-regular);
+    margin: 40px 0 20px;
+}
+.text-lg{
+    font-size: var(--font-title);
+    line-height: var(--line-height-subheading);
+    font-weight: var(--font-weight-regular);
+    margin: 40px 0 30px;
+}
+
+.text-md{
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-subheading);
+    font-weight: var(--font-weight-regular);
+    margin: 20px 0 10px;
+}
+
+.text-sm{
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-subheading);
+    font-weight: var(--font-weight-semibold);
+    margin: 10px 0 5px;
+    letter-spacing: var(--space-xxs);
+}
+
+.textCenter{
+    text-align: center;
+}

@@ -1,0 +1,75 @@
+@import '../../assets/style/Variables.css';
+
+body{
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    background-color: var(--color-background);
+}
+a{
+    text-decoration: none;
+    color: var(--color-text-primary);
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    width: 100px;
+    max-width: 100%;
+}
+
+.navBar{
+    background: var(--color-background);
+    padding: 20px;
+    position: sticky;
+  top: 0;
+  z-index: 50;            /* Keeps the navbar above other content */
+  padding: 1rem 0;        /* Vertical padding for spacing */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.navBar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navBar .mainMenu ul{
+    display: flex;
+}
+
+.navBar ul li a{
+    padding: 10px 20px;
+    display: block;
+    font-weight: var(--font-weight-semibold);
+    transition: var(--transition-slow);
+}
+
+.navBar ul li a:hover{
+    color: var(--color-accent);
+}
+
+.navBar ul li a i{
+    margin-right: 10px;
+}
+
+.navBar ul li:last-child a{
+    margin-left: 30px;
+}
+
+.navBar ul{
+    align-items: center;
+}
+
+.navBar ul a{
+    display: flex;
+    font-weight: var(--font-weight-semibold);
+    margin-right: 20px;
+}
+
+.navBar .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid var(--color-accent);
+}

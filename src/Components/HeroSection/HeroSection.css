@@ -1,0 +1,43 @@
+@import '../../assets/style/Variables.css';
+
+
+.btn i{
+    margin-right: 10px;
+}
+.kicker{
+    color:var(--color-text-primary);
+    font-size: var(--font-subtitle);
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: 1.5px;
+}
+
+.heroBtn .btnPrimary{
+    margin-right: 10px;
+}
+
+
+.hero{
+    margin-bottom: 50px;
+}
+.hero{
+    background: url('../../assets/img/hero-bg.png') no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    height: 550px;
+    margin-top: 30px;
+}
+
+.hero .content{
+    width: 70%;
+
+}
+
+.hero .heroText{
+    margin-bottom: 20px;
+    width:60%;
+    font-weight: var(--font-weight-light);
+    color: var(--color-text-primary);
+} 
+.heroHeading{
+    color: var(--color-text-primary)
+}

@@ -1,0 +1,115 @@
+@import '../../assets/style/Variables.css';
+
+.boxContainer {
+  background: var(--color-grey-background);
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.boxContainer h5 {
+  color: var(--color-text-primary);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.boxContainer h1 {
+  font-size: var(--font-heading);
+  margin-top: 10px;
+  color: var(--color-text-secondary);
+}
+
+
+/* Feature Content */
+.featureContent {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+/* Box Styling */
+.box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 350px;
+  padding: 2rem;
+  border-radius: 14px;
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  box-shadow: 8px 8px 16px #d1d1d1, -8px -8px 16px #ffffff;
+  transition: var(--transition-slow);
+  cursor: pointer;
+}
+
+.box:hover {
+  background: linear-gradient(145deg, var(--color-primary-light), var(--color-primary-dark));
+  transform: translateY(-5px);
+}
+
+.icons {
+  font-size: 2rem;
+  color: var(--color-primary-dark);
+  margin-top: 5px;
+  flex-shrink: 0;
+}
+
+.box:hover .icons {
+  color: var(--color-background);
+  transform: translateY(-3px);
+  transition: var(--transition-slow);
+}
+
+/* Hover effect for text content */
+.box:hover .text-content h2,
+.box:hover .text-content p,
+.box:hover i{
+  color: var(--color-background); /* Change text to white on hover */
+}
+
+.text-content {
+  text-align: left;
+}
+
+.text-content h2 {
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  font-size: 1.25rem;
+  margin: 0 0 0.5rem;
+}
+
+.text-content p {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.arrow {
+  font-size: 1.5rem;
+  color: var(--color-primary-dark);
+  margin-left: auto;
+  transition: transform 0.3s ease;
+}
+
+.box:hover .arrow {
+  transform: translateX(5px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .featureContent {
+    flex-direction: column;
+  }
+
+  .box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .icons {
+    margin-bottom: 1rem;
+  }
+}
